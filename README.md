@@ -20,7 +20,7 @@ This task extends the microservice developed in Task 5.1P by publishing the Dock
 ##  Step 2: Tag Your Docker Image
 
 # Build image
-docker build . -t <docker-username>/<image-name>
+docker build . -t `<docker-username>/<image-name>`
 
 # Tag for Artifact Registry
 docker tag <docker-username>/<image-name> <your-region>-docker.pkg.dev/<your-project-id>/<repo-name>/<docker-username>/<image-name>
