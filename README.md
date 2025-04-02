@@ -26,9 +26,9 @@ This task extends the microservice developed in Task 5.1P by publishing the Dock
 `docker tag <docker-username>/<image-name> <your-region>-docker.pkg.dev/<your-project-id>/<repo-name>/<docker-username>/<image-name>`
 
 ## Step 3: Authenticate Docker with GCP
-gcloud auth login
-gcloud config set project sit737-25t1-neroshan-7dfbbd9
-gcloud auth configure-docker australia-southeast1-docker.pkg.dev
+ 1. gcloud auth login
+ 2. gcloud config set project sit737-25t1-neroshan-7dfbbd9
+ 3. gcloud auth configure-docker australia-southeast1-docker.pkg.dev
 
 ##  Step 4: Push Docker Image to Registry
 `docker push <your-region>-docker.pkg.dev/<your-project-id>/<repo-name>/<docker-username>/<image-name>`
