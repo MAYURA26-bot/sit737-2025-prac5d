@@ -20,20 +20,20 @@ This task extends the microservice developed in Task 5.1P by publishing the Dock
 ##  Step 2: Tag Your Docker Image
 
 # Build image
-docker build . -t `<docker-username>/<image-name>`
+`docker build . -t <docker-username>/<image-name>`
 
 # Tag for Artifact Registry
-docker tag <docker-username>/<image-name> <your-region>-docker.pkg.dev/<your-project-id>/<repo-name>/<docker-username>/<image-name>
+`docker tag <docker-username>/<image-name> <your-region>-docker.pkg.dev/<your-project-id>/<repo-name>/<docker-username>/<image-name>`
 
 ## Step 3: Authenticate Docker with GCP
-gcloud auth login
-gcloud config set project <ProjectID>
-gcloud auth configure-docker <your-region>-docker.pkg.dev
+`gcloud auth login`
+`gcloud config set project <ProjectID>`
+`gcloud auth configure-docker <your-region>-docker.pkg.dev`
 
 ##  Step 4: Push Docker Image to Registry
-docker push <your-region>-docker.pkg.dev/<your-project-id>/<repo-name>/<docker-username>/<image-name>
+`docker push <your-region>-docker.pkg.dev/<your-project-id>/<repo-name>/<docker-username>/<image-name>`
 
 ## Step 5: Run Image from Google Cloud
-docker run -p <host-port>:<container-port> <your-region>-docker.pkg.dev/<your-project-id>/<repo-name>/<docker-username>/<image-name>
+`docker run -p <host-port>:<container-port> <your-region>-docker.pkg.dev/<your-project-id>/<repo-name>/<docker-username>/<image-name>`
 
 Visit: [http://localhost:3001](http://localhost:3001)
